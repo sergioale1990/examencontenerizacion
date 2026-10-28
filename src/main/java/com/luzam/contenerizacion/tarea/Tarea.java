@@ -34,7 +34,6 @@ public class Tarea {
     @Column(name = "completada_en")
     private Instant completadaEn;
 
-    /** Constructor vacío requerido por JPA (no se usa desde el código). */
     protected Tarea() {
     }
 
@@ -43,13 +42,11 @@ public class Tarea {
         this.descripcion = descripcion;
     }
 
-    /** Se ejecuta justo antes del INSERT. */
     @PrePersist
     void alCrear() {
         this.creadaEn = Instant.now();
     }
 
-    /** Regla de negocio: marcar como completada es idempotente (repetirlo no cambia la fecha). */
     public void marcarCompletada() {
         if (!completada) {
             this.completada = true;
