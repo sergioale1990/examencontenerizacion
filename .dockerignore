@@ -1,0 +1,17 @@
+# Lo que NO se envía al daemon como contexto de construcción
+.git
+.gitignore
+.gitattributes
+.gradle
+build
+.idea
+.vscode
+*.iml
+HELP.md
+*.md
+docs
+k8s
+helm
+swarm
+.env
+compose.yaml
