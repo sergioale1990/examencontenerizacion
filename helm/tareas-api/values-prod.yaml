@@ -1,3 +1,5 @@
 replicaCount: 2
 config:
   APP_ENV: prod
+  SPRINGDOC_SWAGGERUI_ENABLED: "false"
+  SPRINGDOC_APIDOCS_ENABLED: "false"

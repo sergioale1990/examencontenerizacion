@@ -24,7 +24,7 @@ services:
 
   api:
     build: .
-    image: contenerizacion:1.0.0
+    image: contenerizacion:1.0.3
     restart: unless-stopped
     depends_on:
       db:
@@ -37,7 +37,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD:?Definir DB_PASSWORD en archivo .env}
       SERVER_PORT: ${SERVER_PORT}
       APP_ENV: compose
-      APP_VERSION: 1.0.0
+      APP_VERSION: 1.0.3
     ports:
       - "8080:8080"
     networks:
