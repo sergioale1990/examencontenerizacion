@@ -24,7 +24,7 @@ services:
 
   api:
     build: .
-    image: contenerizacion:1.0.0
+    image: contenerizacion:1.0.2
     restart: unless-stopped
     depends_on:
       db:
